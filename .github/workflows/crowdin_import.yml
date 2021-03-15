@@ -5,8 +5,8 @@
 name: "Crowdin Import GH Action"
 
 on:
-  schedule:
-    - cron: "0/10 * * * *" # Check every 10 minutes for updates.
+#  schedule:
+#    - cron: "0/10 * * * *" # Check every 10 minutes for updates.
   workflow_dispatch:
     
 env:
