@@ -24,7 +24,6 @@ jobs:
         uses: crowdin/github-action@1.0.21
         with:
           download_language: 'fr'
-          crowdin_branch_name: 'master'
         
           upload_sources: false # Don't upload sources
           
@@ -47,7 +46,6 @@ jobs:
         uses: crowdin/github-action@1.0.21
         with:
           download_language: 'de-CH'
-          crowdin_branch_name: 'master'
         
           upload_sources: false # Don't upload sources
           
