@@ -22,7 +22,7 @@ jobs:
         uses: actions/Checkout@v2
         
       - name: Download French translations
-        if: env.GITHUB_TOKEN != null
+        if: env.GITHUB_TOKEN != ''
         uses: crowdin/github-action@1.0.21
         with:
           download_language: 'fr'
