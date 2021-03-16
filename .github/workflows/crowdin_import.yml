@@ -23,25 +23,26 @@ jobs:
         
       - name: Download French translations
         if: env.GITHUB_TOKEN != ''
-        uses: crowdin/github-action@1.0.21
-        with:
-          download_language: 'fr'
+        run: echo env.GITHUB_TOKEN
+#         uses: crowdin/github-action@1.0.21
+#         with:
+#           download_language: 'fr'
         
-          upload_sources: false # Don't upload sources
+#           upload_sources: false # Don't upload sources
           
-          download_translations: true # Download translations from Crowdin
-          skip_untranslated_files: true # Only download fully translated files
+#           download_translations: true # Download translations from Crowdin
+#           skip_untranslated_files: true # Only download fully translated files
           
-          push_translations: true # Push translations to branch
-          commit_message: "Updated French"
-          localization_branch_name: "translations" # Git branch for translations
+#           push_translations: true # Push translations to branch
+#           commit_message: "Updated French"
+#           localization_branch_name: "translations" # Git branch for translations
           
-          create_pull_request: true
-          pull_request_title: "New Crowdin Translations"
-          pull_request_body: |-
-            New Translations were made for the bot.
-            If you want to help making them, read about it on our [Documentation](https://docs.purrbot.site/contribute/translate/)
-          pull_request_labels: "Type: Translation"
+#           create_pull_request: true
+#           pull_request_title: "New Crowdin Translations"
+#           pull_request_body: |-
+#             New Translations were made for the bot.
+#             If you want to help making them, read about it on our [Documentation](https://docs.purrbot.site/contribute/translate/)
+#           pull_request_labels: "Type: Translation"
 
 
       - name: Download German, Switzerland translations
