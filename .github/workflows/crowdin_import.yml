@@ -22,6 +22,7 @@ jobs:
         uses: actions/Checkout@v2
         
       - name: Download French translations
+        if: env.GITHUB_TOKEN != null
         uses: crowdin/github-action@1.0.21
         with:
           download_language: 'fr'
@@ -44,6 +45,7 @@ jobs:
 
 
       - name: Download German, Switzerland translations
+        if: env.GITHUB_TOKEN != null
         uses: crowdin/github-action@1.0.21
         with:
           download_language: 'de-CH'
